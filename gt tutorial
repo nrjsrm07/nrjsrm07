@@ -1,0 +1,55 @@
+git config --global user.name "Neeraj Sharma"
+git config --global user.email nrjsrm07@gmail.com
+git config --global core.editor "code --wait"
+git config --global -e 
+git config --global core.autocrlf true //true for windows
+git config --global --help
+git config --global -h
+git init
+git add file1 
+git add file2
+git commit -m "initial commit"
+git status
+git add file2.txt file1.txt
+git add *.txt
+git add .
+echo hello > file1.txt
+echo world >> file1.txt
+git commit -m "....."
+git commit 
+git commit -a -m "commit message"
+git push origin master
+git commit -am "commit message"
+git ls-files
+
+git rm file2.txt 
+git mv main.js file1.txt
+git status -s 
+
+git diff --staged
+
+git config --global iff.tool vscode
+git config --global difftool.vscode.cmd "code --wait"
+git config --global difftool.vscode.cmd "code --diff"
+git config --global difftool.vscode.cmd "code $REMOTE"
+git config --global difftool.vscode.cmd "code $LOCAL"
+git config --global difftool.vscode.cmd "code --wait --diff $LOCAL $REMOTE"
+
+git difftool
+git difftool --staged
+
+git log 	//to view the history
+git log --oneline -- reverse
+git show
+*****************************
+git remote add origin https://github.com/nrjsrm07/GenpactRepo.git
+git remote add origin ssh://git@github.com/nrjsrm07/GenpactRepo.git
+
+git push origin master
+
+git config --global  http.sslVerify false
+
+git push origin master
+
+
+
